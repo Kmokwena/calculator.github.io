@@ -5,18 +5,11 @@
 body {
   /* margin: 0; */
   /* padding: 0; */
-  background-image: linear-gradient(
-    45deg,
-    #fff5e4,
-    #ffe3e1,
-    #ffd1d1,
-    #ff9494,
-    #fc1111
-  );
+  background-image: linear-gradient(90deg, #fff5e4, #ff9494, #ff9c11, #ffc111);
   background-size: 300%;
-  animation: animate 10s infinite alternate;
+  animation: animate 20s infinite alternate;
   /* background: linear-gradient(); */
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 }
 
 @keyframes animate {
@@ -48,4 +41,9 @@ body {
 
 .number-buttons {
   border: 1px solid #000000;
+}
+
+#display {
+  font-family: "Wallpoet", cursive;
+  font-size: 25px;
 }
