@@ -1,15 +1,22 @@
+:root {
+  --container-color: #d7defa;
+  --body-color: #a2a2a1ff;
+}
+
 * {
   box-sizing: border-box;
+  /* outline: 2px solid red; */
 }
 
 body {
   /* margin: 0; */
   /* padding: 0; */
-  background-image: linear-gradient(90deg, #fff5e4, #ff9494, #ff9c11, #ffc111);
+  /* background-image: linear-gradient(90deg, #fff5e4, #ff9494, #ff9c11, #ffc111);
   background-size: 300%;
-  animation: animate 20s infinite alternate;
+  animation: animate 20s infinite alternate; */
   /* background: linear-gradient(); */
   /* background-repeat: no-repeat; */
+  background-color: var(--body-color);
 }
 
 @keyframes animate {
@@ -29,6 +36,8 @@ body {
   height: 85vh;
   border-radius: 75px;
   box-shadow: -10px -10px 10px;
+  padding: 20px;
+  background-color: var(--container-color);
 }
 
 .screen {
@@ -40,10 +49,44 @@ body {
 }
 
 .number-buttons {
-  border: 1px solid #000000;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 #display {
   font-family: "Wallpoet", cursive;
   font-size: 25px;
+}
+button {
+  font-size: 40px;
+  border-radius: 15px;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--body-color);
+}
+
+button:active {
+  background-color: var(--container-color);
+  border: none;
+}
+
+@media screen and (min-width) {
+}
+
+.clear {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.clear > button {
+  font-size: 40px;
+  border-radius: 15px;
+  width: 120px;
+  height: 50px;
+  cursor: pointer;
 }
